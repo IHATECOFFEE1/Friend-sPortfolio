@@ -1,0 +1,17 @@
+.qaDiv {
+    margin-left: 1%;
+    max-width: 90ch;
+
+    .question, .answer {
+        color: white;
+    }
+
+    .question{
+        font-size: 1rem;
+
+        &::before {
+            content: ">";
+            color: white;
+        }
+    }
+}

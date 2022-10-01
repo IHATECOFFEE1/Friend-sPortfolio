@@ -1,0 +1,39 @@
+.footer {
+    align-items: center;
+    background-color: hsl(205deg, 85%, 5%);
+    color: rgb(0, 0, 0);
+    display: flex;
+    font-size: 1em;
+    justify-content: space-between;
+    padding: 2% 5%;
+    position: sticky;
+    width: 100%;
+
+    .info {
+        color: white;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        padding: 2%;
+
+        h2 {
+            font-size: 3rem;
+            margin: 0;
+        }
+
+        p {
+
+            a {
+                color: hsl(204, 86%, 62%);
+
+                &:hover {
+                    color: hsl(204, 86%, 72%);
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        flex-direction: column;
+    }
+}

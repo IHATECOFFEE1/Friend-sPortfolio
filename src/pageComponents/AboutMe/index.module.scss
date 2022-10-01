@@ -1,0 +1,33 @@
+.aboutMeSection {
+    background-color: hsl(205, 85%, 5%);
+    padding: 2% 7%;
+    padding-top: 60px;
+    display: flex;
+
+    @media screen and (max-width: 880px) {
+        flex-direction: column-reverse;
+    }
+}
+
+.contactPicDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 600px;
+
+    .pictureDiv {    
+        height: 330px;
+        margin: auto;
+        position: relative;
+        width: 280px;
+
+        img {
+            border-radius: 6px;
+
+            &:hover {
+                opacity: 0.6;
+                transition: 0.3s;
+            }
+        }
+    }
+}

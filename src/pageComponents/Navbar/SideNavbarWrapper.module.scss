@@ -1,0 +1,38 @@
+.sideNavbarWrapper {
+    display: none;
+    position: relative;
+
+    button {
+        background-color: white;
+        border: none;
+        margin-right: 10px;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.dropDown {
+    background-color: hsl(0, 0%, 100%);
+    font-size: 2em;
+    height: auto;
+    margin: 0;
+    list-style-type: none;
+    padding: 0;
+    position: absolute;
+    right: 0;
+    top: 52px;
+
+    li {
+        height: 100%;
+        padding: 10px 30px;
+        border-top: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .sideNavbarWrapper {
+        display: block;
+    }
+}

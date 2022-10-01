@@ -1,0 +1,105 @@
+.introductionSection {
+    background-color: hsl(0, 0%, 100%);
+    min-height: 100%;
+    margin: 0;
+    padding: 0 1% 1% 1%;
+}
+
+.introduction {
+    display: grid;
+    height: 100%;
+    grid-template-rows: repeat(11, 1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 1%;
+    padding-top: 65px;
+}
+
+.welcomeDiv {
+    grid-row: span 3;
+    grid-column: span 2;
+}
+
+.gridDiv {
+    background: rgb(0, 0, 0);
+    color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    transition: all ease-in-out 300ms;
+    position: relative;
+
+    &.small {
+        grid-row: span 1;
+        grid-column: span 1;
+    }
+
+    &.medium {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    &.large {
+        grid-row: span 3;
+        grid-column: span 3;
+    }
+
+    &.tall {
+        grid-row: span 2;
+        grid-column: span 1;
+    }
+
+    &.wideTall {
+        grid-row: span 3;
+        grid-column: span 2;
+    }
+
+    &.wide {
+        grid-row: span 2;
+        grid-column: span 2;
+    }
+
+    &.superWide {
+        grid-row: span 1;
+        grid-column: span 2;
+    }
+
+    &:hover {
+        background-position: center center;
+        opacity: 0.5;
+    }
+
+    img {
+        object-position: top left;
+        transition: all ease-in-out 300ms;
+
+        &:hover {
+            object-position: center center;
+        }
+    }
+}
+
+
+@media screen and (max-width: 750px) {
+    .introduction {
+        grid-template-rows: repeat(29, 1fr);
+        grid-template-columns: 1fr;
+        grid-gap: .5% 1%;
+    }
+
+    .welcomeDiv {
+        grid-row: span 3;
+        grid-column: span 1;
+    }
+
+    .gridDiv {
+        &.small, &.medium, &.large, &.tall, &.wideTall, &.wide, &.superWide {
+            grid-column: span 1;
+        }
+    }
+
+    .pic5 {
+        grid-row: span 3;
+    }
+}
+
+
